@@ -1,9 +1,69 @@
-/* Home Page Header Image */
+/*--------------------------------------------------------------
+  Custome CSS Manager // Home Page Header Image
+--------------------------------------------------------------*/
 .site-branding.header-background-image {
   display: none;
 }
 
-/* YouTube Responsive Video Styling on Wide Pages */
+/*--------------------------------------------------------------
+  Main Menu Customization
+--------------------------------------------------------------*/
+.main-navigation { /* background of the whole nav bar*/
+  background: #04294b;
+}
+
+.main-navigation li:hover > a { /* background when hovered over */
+  background-color: #134e86;
+}
+
+
+.main-navigation li { /* background of the li tags*/
+  background-color: #04294b;
+}
+
+.main-navigation ul ul a:hover,
+.main-navigation ul ul a:focus { /*background of dropdown items when hovered*/
+    background: #124e86;
+}
+
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_item > a:hover,
+.main-navigation .current-menu-item > a:hover,
+.main-navigation .current_page_item > a:focus,
+.main-navigation .current-menu-item > a:focus {
+    color: #fff;
+    background: #04294b; /*Home tab background*/
+}
+
+.main-navigation .current_page_ancestor {
+    background: #124e86; /* current page tab in nav menu */
+}
+
+.main-navigation ul ul .current_page_parent,
+.main-navigation .current_page_parent .current_page_item > a {
+    color: #fff;
+    background: #124e86; /*background of what page you're on*/
+}
+
+.menu-toggle a:hover, /* mobile menu background */
+.menu-toggle a:focus {
+        background: #124e86;
+    }
+
+.search-toggle:hover,
+.search-toggle.active {
+    background: #124e86;
+}
+
+.search-box {
+    padding: 1em;
+    background: #124e86;
+}
+
+/*--------------------------------------------------------------
+ YouTube Responsive Video Styling on Wide Pages
+--------------------------------------------------------------*/
 .vidwrapper {
     max-width:50%;
     margin: 0 auto .5em auto;
@@ -36,7 +96,19 @@ iframe {
 }
 
 
-/* Home Page Custom Letterhead and Cards */
+/*--------------------------------------------------------------
+  Home Page Custom Letterhead and Cards
+--------------------------------------------------------------*/
+#letterHeadContainer {
+  margin: 0 auto;
+  background-color: #fff;
+  text-align: center;
+}
+
+#letterHead { /* Letter Head Image */
+    width: 100%;
+}
+
 #homeHeader { /* Wrapper for the entire Header - Card Area */
     background-color: #04294b;
     color: #fff;
@@ -45,15 +117,22 @@ iframe {
     text-align: center;
 }
 
+#homeStreaming h2 { /*steaming section inside homeHeader*/
+
+}
+
 #homeHeader h2 {
+  padding: 1em 0 0 0;
   color: #fff;
 }
 
 #homeVision {
     margin-top: 0;
+    padding: 0 7% 0 7%;
     font-weight: bold;
     font-style: italic;
     font-size: 1.5em;
+    color: #04294b;
 }
 
 #homeCards { /* Containter Holding the Cards */
@@ -80,11 +159,9 @@ iframe {
     box-shadow: .3em .5em .8em #111, -.2em -.2em .3em #333;
 }
 
-#letterHead { /* Letter Head Image */
-    max-width: 80%;
-}
-
-/*Home Page Bookmark Icons*/
+/*--------------------------------------------------------------
+  Home Page Bookmark Icons
+--------------------------------------------------------------*/
 #homeBookmarks {
       margin: 2% 3.5%;
       padding: 1em;
@@ -117,7 +194,9 @@ iframe {
     width: 50%;
 }
 
-/*Home Page Boxes with Mass Times & Sacrament Schedules */
+/*--------------------------------------------------------------
+  Home Page Boxes with Mass Times & Sacrament Schedules
+--------------------------------------------------------------*/
 #homeBoxSection {
   	text-align: center;
   	margin: 0 0 1em 0;
@@ -161,12 +240,16 @@ iframe {
         }
 
 
-/*Home Page Calendar Embed*/
+/*--------------------------------------------------------------
+  Home Page Calendar Embed
+--------------------------------------------------------------*/
 #homeCalendar {
   margin: 0 0 2em 0;
 }
 
-/*Home Page Video Section */
+/*--------------------------------------------------------------
+  Home Page Video Section
+--------------------------------------------------------------*/
 #homeVideo {
    text-align: center;
    /*background-color: #777777;
@@ -189,7 +272,9 @@ iframe {
 }
   
 
-/* Blog Post Video Stylings */
+/*--------------------------------------------------------------
+  Blog Post Video Stylings
+--------------------------------------------------------------*/
 .blogvidwrapper {
     max-width:80%;
     margin: 0 auto .5em auto;
@@ -230,7 +315,9 @@ iframe {
   background: hsla(0,0%,0%,0);
 }
 
-/* Covid-19 Updates on Home Page */
+/*--------------------------------------------------------------
+  Covid-19 Updates on Home Page
+--------------------------------------------------------------*/
 #covid {
   background-color: rgb(255, 255, 255, .15);
   border-radius: 1.5em;
@@ -263,7 +350,9 @@ iframe {
   text-align: left;
 }
 
-/* Weather Cancellations on Home Page */
+/*--------------------------------------------------------------
+  Weather Cancellations on Home Page
+--------------------------------------------------------------*/
 #weather {
   background-color: rgb(255, 255, 255, .15);
   border-radius: 1.5em;
@@ -296,7 +385,9 @@ iframe {
   text-align: left;
 }
 
-/* Meet Our Staff Page */
+/*--------------------------------------------------------------
+  Meet Our Staff Page
+--------------------------------------------------------------*/
 
 .staffImages {
   text-align: center;
@@ -315,7 +406,9 @@ iframe {
     margin: 0 1em 1em 1em; 
 }
 
-/*Default Button Design*/
+/*--------------------------------------------------------------
+Default Button Design
+--------------------------------------------------------------*/
 
 .bluebutton {
    color: #fff;
