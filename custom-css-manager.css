@@ -110,20 +110,27 @@ iframe {
 }
 
 #homeHeader { /* Wrapper for the entire Header - Card Area */
-    background-color: #04294b;
-    color: #fff;
+    background-color: #fff;
     padding: 0 7% 2% 7%;
-    margin: 0 auto;
+    margin: 0;
     text-align: center;
-}
-
-#homeStreaming h2 { /*steaming section inside homeHeader*/
-
 }
 
 #homeHeader h2 {
   padding: 1em 0 0 0;
   color: #fff;
+}
+
+#homeStreaming h2 { 
+
+}
+
+#homeStreaming {
+     margin: 0;
+     padding: 1em;
+     border-radius: 1.5em;
+     background-color: #04294b;
+     color: #fff;
 }
 
 #homeVision {
@@ -133,6 +140,18 @@ iframe {
     font-style: italic;
     font-size: 1.5em;
     color: #04294b;
+}
+
+#trending {
+    background-color: #04294b;
+    padding: 0 7% 2% 7%;
+    margin: 0;
+    text-align: center; 
+}
+
+#trending h2 {
+  padding: 1em 0 0 0;
+  color: #fff;
 }
 
 #homeCards { /* Containter Holding the Cards */
